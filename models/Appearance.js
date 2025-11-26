@@ -1,9 +1,9 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const appearanceSchema = new mongoose.Schema({
-  primaryColor: String,
-  secondaryColor: String,
-  logo: String
+    themeColor: String,
+    logoUrl: String,
+    bannerUrl: String,
 });
 
-export default mongoose.model("Appearance", appearanceSchema);
+module.exports = mongoose.model("Appearance", appearanceSchema);

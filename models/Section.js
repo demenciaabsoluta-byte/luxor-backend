@@ -1,8 +1,7 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const sectionSchema = new mongoose.Schema({
-  name: String,
-  active: Boolean
+    name: { type: String, required: true },
 });
 
-export default mongoose.model("Section", sectionSchema);
+module.exports = mongoose.model("Section", sectionSchema);
