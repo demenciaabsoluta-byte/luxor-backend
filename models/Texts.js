@@ -1,9 +1,8 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const textsSchema = new mongoose.Schema({
-    aboutUs: String,
-    welcomeMessage: String,
-    footerText: String,
+  about: String,
+  welcome: String
 });
 
-module.exports = mongoose.model("Texts", textsSchema);
+export default mongoose.model("Texts", textsSchema);

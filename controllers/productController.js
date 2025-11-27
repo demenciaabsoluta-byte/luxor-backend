@@ -1,3 +1,4 @@
+console.log("Cargando Product desde:", import.meta.url);
 import Product from "../models/Product.js";
 
 export const getProducts = async (req, res) => {
